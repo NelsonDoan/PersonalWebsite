@@ -1,0 +1,1 @@
+This is where all my personal projects will go and track my commitment to learning something new.
