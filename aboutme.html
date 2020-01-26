@@ -1,22 +1,56 @@
-<!DOCTYPE html>
-
-    <head>
-        <title id="title">Nelson's First HTML Website</title>
-        <link rel="stylesheet" href="style.css">
-        <meta charset="UTF-8">
-    </head>    
-
-    <body> 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
-        <div class="wrapper">
-            <H1>About Me</H1>
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title id="title">Nelson's First HTML Website</title>
+            <link rel="stylesheet" href="css/main.css">
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+            <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+        </head>    
+    
+        <body>
+            <nav id="overlay">
+                <img src="assets/close.svg" alt="close" class="close-btn" id="close-menu">
+                
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                        <span>Take me home</span>
+                    </li>
+                    <li>
+                        <a href="projects.html">Projects</a>
+                        <span>My Personal Projects</span>
+                    </li>
+                    <li>
+                        <a href="aboutme.html">About Me</a>
+                        <span>Resume and Personal Summary</span>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Me</a>
+                        <span>Get in touch with me</span>
+                    </li>
+                </ul>
+            </nav>
+            <header>
+                <a href="#" class="logo">Nelson Doan</a>
+        
+                <img src="assets/Menu icon.svg" alt="menu" class="menu-btn" id="open-menu">
+            </header>
+            <section>
+                <H1>About Me</H1>
             <embed src="assets/NelsonDoanResume1:1:20.pdf" width="700" height="950" type="application/pdf">
-        </div>
-    </body>
+            </section>
+            <script>
+                var overlay = document.getElementById('overlay');
+                var closeMenu = document.getElementById('close-menu');
+                
+                document.getElementById('open-menu').addEventListener('click', function() {
+                    overlay.classList.add('show-menu');
+                });
+                document.getElementById('close-menu').addEventListener('click', function() {
+                    overlay.classList.remove('show-menu');
+                });
+                
+            </script>
+        </body>
+        </html>
