@@ -23,22 +23,6 @@ header .menu-btn {
   cursor: pointer;
 }
 
-section {
-  padding: 1em;
-}
-
-section h1 {
-  font-size: 4em;
-  margin: .5em auto;
-  width: 60%;
-}
-
-section h1::before {
-  content: ' ';
-  border-top: 10px solid lightgrey;
-  display: block;
-}
-
 nav {
   position: absolute;
   background: black;

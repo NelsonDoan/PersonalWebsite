@@ -24,19 +24,7 @@ header {
 }
 
 section {
-    padding: 1em;
     
-    h1 {
-        font-size: 4em;
-        margin: .5em auto;
-        width: 60%;
-
-        &::before {
-            content: ' ';
-            border-top: 10px solid lightgrey;
-            display: block;
-        }
-    }
 }
 
 nav {
