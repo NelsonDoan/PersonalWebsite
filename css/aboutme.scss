@@ -1,0 +1,19 @@
+section {
+
+    h1 {
+        font-size: 4em;
+        font-weight: 100;
+        margin: auto;
+        width: 25%;
+
+        &::after {
+            content: " ";
+            border-top: 10px solid #3E3636;
+            display: block;
+        }
+    }
+}
+
+.card {
+    
+}
